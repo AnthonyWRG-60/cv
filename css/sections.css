@@ -124,6 +124,19 @@
     font-style: italic;
 }
 
+.cert-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.cert-link:hover {
+    opacity: 0.6;
+}
+
 .bullets {
     margin: 12px 0 0 18px;
     color: var(--body);

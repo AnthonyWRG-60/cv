@@ -16,11 +16,20 @@ Mi portafolio personal
 
 | # | Sección | Contenido |
 |---|---------|-----------|
-| 01 | Perfil | Presentación breve |
-| 02 | Tecnologías | Habilidades, hosting e idiomas |
-| 03 | Trabajos | Proyectos con carrusel de imágenes |
-| 04 | Trayectoria | Experiencia profesional |
-| 05 | Educación | Formación académica y certificaciones |
+| 01 | Perfil profesional | Presentación breve |
+| 02 | Experiencia | Prácticas en Optimiz y Digital Tec Support |
+| 03 | Formación académica | SENATI y CETPRO Salesiano "Don Bosco" |
+| 04 | Habilidades | Tecnologías, hosting e idiomas |
+| 05 | Formación complementaria | Cursos, certificaciones y eventos |
+| 06 | Proyectos | Carrusel de imágenes por proyecto |
+
+## Características.
+
+- Intro animada con foto y nombre.
+- Modo claro y oscuro: respeta el tema del sistema y recuerda la elección.
+- Carrusel de imágenes en los proyectos, con flechas, puntos y avance automático.
+- Enlaces a los certificados en PDF.
+- Diseño adaptable a celular y tablet.
 
 ## Estructura.
 
@@ -29,13 +38,13 @@ index.html
 css/        base · intro · layout · sections · carousel · responsive
 js/         carousel.js · theme.js
 assets/
-  images/   profile.png · corporate-website/ · inventory-system/
+  images/        profile.png · corporate-website/ · inventory-system/
+  certificates/  cetpro-title · digitaltec-internship · innovations-2025
 ```
 
 ## Tecnologías.
 
 HTML · CSS · JavaScript, sin frameworks ni dependencias. Solo la tipografía [Inter](https://fonts.google.com/specimen/Inter) se carga desde Google Fonts.
-
 
 ---
 

@@ -1,4 +1,4 @@
-.section {
+﻿.section {
     padding: 75px 0;
     border-bottom: 1px solid var(--line);
     scroll-margin-top: 25px;
@@ -13,7 +13,7 @@
 
 .section-text {
     max-width: 720px;
-    color: #666666;
+    color: var(--body);
     font-size: 0.95rem;
 }
 
@@ -56,13 +56,13 @@
 
 .project {
     border: 1px solid var(--line);
-    background: #ffffff;
+    background: var(--bg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 12px 30px var(--shadow);
 }
 
 .project-info {
@@ -82,7 +82,7 @@
 
 .project-description {
     margin: 12px 0;
-    color: #777777;
+    color: var(--muted);
     font-size: 0.8rem;
     line-height: 1.8;
 }
@@ -92,7 +92,7 @@
     margin-top: 8px;
     padding: 5px 9px;
     border: 1px solid var(--line);
-    color: #555555;
+    color: var(--body);
     font-size: 0.65rem;
     letter-spacing: 0.5px;
 }
@@ -126,7 +126,7 @@
 
 .bullets {
     margin: 12px 0 0 18px;
-    color: #666666;
+    color: var(--body);
     font-size: 0.82rem;
     line-height: 1.8;
 }

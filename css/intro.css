@@ -1,4 +1,4 @@
-.intro {
+﻿.intro {
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
     position: fixed;
     inset: 0;
@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: var(--bg);
     animation: intro-out 1s var(--ease) 3.2s forwards;
     pointer-events: none;
 }
@@ -28,7 +28,7 @@
     position: absolute;
     inset: -16px;
     border-radius: 50%;
-    background: conic-gradient(from 0deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+    background: conic-gradient(from 0deg, transparent 0%, var(--black) 100%);
     -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
     mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
     will-change: transform;
@@ -39,7 +39,7 @@
     content: "";
     position: absolute;
     inset: -16px;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--line-strong);
     border-radius: 50%;
     will-change: transform, opacity;
     animation: ring-pulse 2.4s ease-out 1s infinite;
@@ -70,7 +70,7 @@
 .intro h1 span,
 .hero h1 span,
 .section h2 span {
-    color: #888888;
+    color: var(--accent);
 }
 
 .intro > p {

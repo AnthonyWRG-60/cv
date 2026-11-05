@@ -27,7 +27,7 @@ Mi portafolio personal
 ```
 index.html
 css/        base · intro · layout · sections · carousel · responsive
-js/         carousel.js
+js/         carousel.js · theme.js
 assets/
   images/   profile.png · corporate-website/ · inventory-system/
 ```

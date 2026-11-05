@@ -1,0 +1,111 @@
+.intro {
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    animation: intro-out 1s var(--ease) 3.2s forwards;
+    pointer-events: none;
+}
+
+.intro .ball {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: photo-circle 1.1s var(--ease) 0.2s forwards;
+}
+
+.intro .ball::before {
+    content: "";
+    position: absolute;
+    inset: -16px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
+    will-change: transform;
+    animation: circle-spin 1.8s linear infinite;
+}
+
+.intro .ball::after {
+    content: "";
+    position: absolute;
+    inset: -16px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    will-change: transform, opacity;
+    animation: ring-pulse 2.4s ease-out 1s infinite;
+}
+
+.intro img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: photo-appear 1s var(--ease) 0.6s forwards;
+}
+
+.intro h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    opacity: 0;
+    animation: text-appear 1s var(--ease) 1.1s forwards;
+}
+
+.intro h1 span,
+.hero h1 span,
+.section h2 span {
+    color: #888888;
+}
+
+.intro > p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation: text-appear 1s var(--ease) 1.4s forwards;
+}
+
+@keyframes photo-circle {
+    from { opacity: 0; transform: scale(0.7); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes circle-spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes ring-pulse {
+    from { transform: scale(1); opacity: 0.7; }
+    to   { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes photo-appear {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.85); }
+    to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes text-appear {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes intro-out {
+    to { opacity: 0; transform: scale(1.04); visibility: hidden; }
+}

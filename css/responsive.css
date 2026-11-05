@@ -1,0 +1,77 @@
+@media (max-width: 1000px) {
+    .portfolio {
+        padding: 30px;
+    }
+
+    .sidebar {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px 10px;
+        gap: 22px;
+    }
+
+    .sidebar .brand {
+        margin: 0;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio {
+        padding: 20px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 45px 0;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+        letter-spacing: -2px;
+    }
+
+    .hero-image {
+        max-width: 340px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .skills,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .sidebar {
+        gap: 14px;
+    }
+
+    .sidebar a {
+        font-size: 0.62rem;
+    }
+
+    .intro h1 {
+        letter-spacing: -1px;
+    }
+
+    .intro > p {
+        font-size: 0.55rem;
+        letter-spacing: 2px;
+    }
+}

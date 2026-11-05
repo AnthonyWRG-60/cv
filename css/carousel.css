@@ -1,0 +1,93 @@
+.carousel {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track > * {
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.carousel-track img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f0f0;
+    color: var(--text);
+}
+
+.slide span {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.slide strong {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text);
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.carousel:hover .carousel-btn {
+    opacity: 1;
+}
+
+.carousel.is-single .carousel-btn,
+.carousel.is-single .carousel-dots {
+    display: none;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.carousel-dots button {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.carousel-dots button.active {
+    background: var(--black);
+}

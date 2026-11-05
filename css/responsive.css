@@ -33,29 +33,22 @@
         gap: 35px;
     }
 
-    .hero h1 {
-        font-size: 2.7rem;
-        letter-spacing: -2px;
-    }
-
     .hero-image {
         max-width: 340px;
-        width: 100%;
-        margin: auto;
-    }
-
-    .skills,
-    .projects {
-        grid-template-columns: 1fr;
-    }
-
-    .section {
-        padding: 55px 0;
     }
 
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 6px;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+        letter-spacing: -2px;
+    }
+
+    .section {
+        padding: 55px 0;
     }
 
     .sidebar {

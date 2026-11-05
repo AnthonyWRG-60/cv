@@ -18,9 +18,8 @@
 }
 
 .skills {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .skills article {
@@ -49,24 +48,13 @@
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project {
-    border: 1px solid var(--line);
-    background: var(--bg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px var(--shadow);
-}
-
-.project-info {
-    padding: 24px;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--line);
 }
 
 .project-info > p:first-child {
@@ -89,10 +77,8 @@
 
 .project-status {
     display: inline-block;
-    margin-top: 8px;
-    padding: 5px 9px;
-    border: 1px solid var(--line);
-    color: var(--body);
+    margin-top: 4px;
+    color: var(--muted);
     font-size: 0.65rem;
     letter-spacing: 0.5px;
 }

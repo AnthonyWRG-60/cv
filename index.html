@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/sections.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/print.css" media="print">
     <script src="./js/theme.js"></script>
 </head>
 <body>
@@ -30,11 +31,11 @@
 
     <nav class="sidebar">
         <a href="#inicio" class="brand">A.</a>
-        <a href="#sobre-mi">Perfil</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#formacion">Formación</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#complementaria">Cursos</a>
+        <a href="#certificados">Certificados</a>
         <a href="#proyectos">Proyectos</a>
     </nav>
 
@@ -44,7 +45,14 @@
             <div class="hero-text">
                 <p class="eyebrow">PORTAFOLIO PROFESIONAL</p>
                 <h1>Anthony Wilfredo<br><span>Rojas García.</span></h1>
-                <h2>Estudiante del V semestre de Ingeniería de Software con Inteligencia Artificial</h2>
+                <p class="hero-summary">
+                    Estudiante del quinto semestre de Ingeniería de Software con
+                    Inteligencia Artificial en SENATI, con experiencia en soporte
+                    técnico y desarrollo de páginas web y sistemas. Busco ampliar
+                    mis conocimientos y contribuir al desarrollo de soluciones de
+                    software en una organización que me permita crecer
+                    profesionalmente.
+                </p>
 
                 <div class="actions">
                     <a href="#proyectos" class="button button-dark">Ver proyectos</a>
@@ -66,21 +74,8 @@
             </div>
         </header>
 
-        <section class="section" id="sobre-mi">
-            <p class="eyebrow">01 / PERFIL</p>
-            <h2>Perfil profesional<span>.</span></h2>
-            <p class="section-text">
-                Estudiante del quinto semestre de Ingeniería de Software con
-                Inteligencia Artificial en SENATI, con experiencia en soporte
-                técnico y desarrollo de páginas web y sistemas. Busco ampliar
-                mis conocimientos y contribuir al desarrollo de soluciones de
-                software en una organización que me permita crecer
-                profesionalmente.
-            </p>
-        </section>
-
         <section class="section" id="experiencia">
-            <p class="eyebrow">02 / TRAYECTORIA</p>
+            <p class="eyebrow">01 / TRAYECTORIA</p>
             <h2>Experiencia<span>.</span></h2>
 
             <div class="timeline">
@@ -89,15 +84,16 @@
                     <div>
                         <h3>Practicante de Soporte Técnico y Desarrollo</h3>
                         <p class="company">Optimiz</p>
+                        <p class="list-title">Funciones</p>
                         <ul class="bullets">
                             <li>Soporte técnico a usuarios y equipos.</li>
                             <li>Desarrollo de páginas web.</li>
                             <li>Desarrollo de sistemas.</li>
                         </ul>
-                        <p class="achievements">Logros</p>
+                        <p class="list-title">Logros</p>
                         <ul class="bullets">
-                            <li>Desarrolló un sistema de inventario para una tienda de cómputo, con registro, salida y control de productos.</li>
-                            <li>Desarrolló una página web corporativa con servicios, contacto y ubicación integrada con Google Maps.</li>
+                            <li>Desarrollo de un sistema de inventario para una tienda de cómputo, con registro, salida y control de productos.</li>
+                            <li>Desarrollo de una página web corporativa con servicios, contacto y ubicación integrada con Google Maps.</li>
                         </ul>
                     </div>
                 </div>
@@ -107,6 +103,7 @@
                     <div>
                         <h3>Practicante de Soporte Técnico</h3>
                         <p class="company">Digital Tec Support</p>
+                        <p class="list-title">Funciones</p>
                         <ul class="bullets">
                             <li>Soporte técnico a usuarios.</li>
                             <li>Mantenimiento preventivo y correctivo de equipos de cómputo.</li>
@@ -120,7 +117,7 @@
         </section>
 
         <section class="section" id="formacion">
-            <p class="eyebrow">03 / EDUCACIÓN</p>
+            <p class="eyebrow">02 / EDUCACIÓN</p>
             <h2>Formación académica<span>.</span></h2>
 
             <div class="timeline">
@@ -144,7 +141,7 @@
         </section>
 
         <section class="section" id="habilidades">
-            <p class="eyebrow">04 / TECNOLOGÍAS</p>
+            <p class="eyebrow">03 / TECNOLOGÍAS</p>
             <h2>Habilidades<span>.</span></h2>
 
             <div class="skills">
@@ -191,7 +188,7 @@
         </section>
 
         <section class="section" id="complementaria">
-            <p class="eyebrow">05 / CURSOS Y CERTIFICACIONES</p>
+            <p class="eyebrow">04 / CURSOS Y CERTIFICACIONES</p>
             <h2>Formación complementaria<span>.</span></h2>
 
             <div class="timeline">
@@ -203,23 +200,18 @@
                         <a class="cert-link" href="./assets/certificates/innovations-2025.pdf" target="_blank" rel="noopener noreferrer">Ver certificado ↗</a>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <span>2025</span>
-                    <div>
-                        <h3>Oracle Academy</h3>
-                        <p>Java Fundamentals y Database Foundations</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <span>2025</span>
-                    <div>
-                        <h3>Red Hat</h3>
-                        <p>Linux (System Admin I)</p>
-                    </div>
-                </div>
             </div>
+        </section>
+
+        <section class="section" id="certificados">
+            <p class="eyebrow">05 / CERTIFICADOS</p>
+            <h2>Certificados<span>.</span></h2>
+
+            <ul class="bullets cert-list">
+                <li>Título de Auxiliar Técnico en Soporte Técnico y Operación de Centros de Cómputo · CETPRO Salesiano "Don Bosco" (2023)</li>
+                <li>Constancia del Evento de Innovaciones Tecnológicas 2025 · SENATI (2025)</li>
+                <li>Certificado de Prácticas Pre Profesionales · Digital Tec Support (2026)</li>
+            </ul>
         </section>
 
         <section class="section" id="proyectos">

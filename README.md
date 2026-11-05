@@ -21,6 +21,7 @@ Mi portafolio personal
 | 03 | Formación académica | SENATI y CETPRO Salesiano "Don Bosco" |
 | 04 | Habilidades | Tecnologías, hosting e idiomas |
 | 05 | Formación complementaria | Cursos, certificaciones y eventos |
+| 05 | Certificados | Lista de certificados obtenidos |
 | 06 | Proyectos | Proyectos desarrollados en Optimiz |
 
 ## Características.

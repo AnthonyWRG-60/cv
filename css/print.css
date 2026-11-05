@@ -1,0 +1,155 @@
+@page {
+    size: A4;
+    margin: 12mm 14mm;
+}
+
+:root,
+:root[data-theme="dark"] {
+    color-scheme: light;
+    --bg: #ffffff;
+    --text: #111111;
+    --black: #111111;
+    --muted: #666666;
+    --body: #444444;
+    --accent: #888888;
+    --line: #dddddd;
+    --line-strong: #cccccc;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.4;
+}
+
+.section h2 {
+    break-after: avoid;
+}
+
+.skills p,
+.timeline-item p,
+.bullets {
+    margin-top: 1px;
+}
+
+.timeline-item .list-title {
+    margin-top: 6px;
+}
+
+.timeline-item .company + .list-title {
+    margin-top: 4px;
+}
+
+.intro,
+.sidebar,
+.theme-toggle,
+.actions,
+.image-label,
+.eyebrow,
+.cert-link,
+#proyectos,
+footer {
+    display: none !important;
+}
+
+.hero,
+.section,
+.timeline-item,
+.skills article,
+.project,
+footer {
+    border: 0 !important;
+}
+
+.portfolio {
+    max-width: none;
+    padding: 0;
+    opacity: 1;
+    animation: none;
+}
+
+.hero {
+    grid-template-columns: 1fr 105px;
+    align-items: start;
+    gap: 24px;
+    min-height: 0;
+    padding: 0 0 6px;
+}
+
+.hero h1 {
+    margin: 0 0 6px;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.hero-summary {
+    max-width: none;
+    font-size: 0.95rem;
+}
+
+.hero-image {
+    max-width: 105px;
+}
+
+.github {
+    margin-top: 8px;
+}
+
+.hero-contact {
+    margin-top: 8px;
+}
+
+.section {
+    padding: 10px 0;
+    break-inside: auto;
+}
+
+.section h2 {
+    margin: 0 0 4px;
+    font-size: 1.35rem;
+    letter-spacing: -0.5px;
+}
+
+.timeline-item {
+    grid-template-columns: 130px 1fr;
+    gap: 14px;
+    padding: 4px 0;
+    break-inside: avoid;
+}
+
+.skills article {
+    padding: 3px 0;
+}
+
+.project {
+    padding: 9px 0;
+    break-inside: avoid;
+}
+
+.project-description {
+    margin: 4px 0;
+}
+
+.bullets {
+    line-height: 1.4;
+}
+
+.cert-link {
+    margin-top: 6px;
+}
+
+footer {
+    padding: 10px 0 0;
+}
+
+.cert-list {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+#habilidades {
+    break-inside: avoid;
+}
+
